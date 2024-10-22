@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.Query;
 public interface OrderRepository extends JpaRepository<Order, Integer> {
 
     @Modifying
-    @Query("update Order o set o.status = 'CANCELED' where o.id = ?2")
+    @Query("update Order o set o.status = 'CANCELED' where o.id = ?1")
     void deleteById(Integer userId);
 }
