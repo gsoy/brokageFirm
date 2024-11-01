@@ -1,0 +1,21 @@
+application:
+    security:
+        jwt:
+            expiration: 604800000
+            refresh-token:
+                expiration: 86400000
+            secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+spring:
+    application:
+        name: brokageFirm
+    datasource:
+        driverClassName: org.h2.Driver
+        password: password
+        url: jdbc:h2:mem:brokagefirm
+        username: sa
+    h2:
+        console:
+            enabled: true
+    sql:
+        init:
+            mode: always
