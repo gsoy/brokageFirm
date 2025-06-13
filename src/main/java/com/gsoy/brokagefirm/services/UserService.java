@@ -2,7 +2,7 @@ package com.gsoy.brokagefirm.services;
 
 import com.gsoy.brokagefirm.repository.UserRepository;
 import com.gsoy.brokagefirm.model.request.ChangePasswordRequest;
-import com.gsoy.brokagefirm.model.User;
+import com.gsoy.brokagefirm.model.dto.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;

@@ -1,6 +1,6 @@
 package com.gsoy.brokagefirm.services;
 
-import com.gsoy.brokagefirm.model.Order;
+import com.gsoy.brokagefirm.model.dto.Order;
 import com.gsoy.brokagefirm.model.enums.Side;
 import com.gsoy.brokagefirm.model.enums.Status;
 import com.gsoy.brokagefirm.model.request.OrderRequest;

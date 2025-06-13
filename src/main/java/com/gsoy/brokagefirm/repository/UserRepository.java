@@ -1,6 +1,6 @@
 package com.gsoy.brokagefirm.repository;
 
-import com.gsoy.brokagefirm.model.User;
+import com.gsoy.brokagefirm.model.dto.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

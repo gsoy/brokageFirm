@@ -2,7 +2,8 @@ package com.gsoy.brokagefirm.services;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.gsoy.brokagefirm.model.*;
+import com.gsoy.brokagefirm.model.dto.Token;
+import com.gsoy.brokagefirm.model.dto.User;
 import com.gsoy.brokagefirm.model.enums.TokenType;
 import com.gsoy.brokagefirm.model.request.AuthenticationRequest;
 import com.gsoy.brokagefirm.model.request.RegisterRequest;

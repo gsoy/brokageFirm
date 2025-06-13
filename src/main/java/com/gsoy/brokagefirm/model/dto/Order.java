@@ -1,4 +1,4 @@
-package com.gsoy.brokagefirm.model;
+package com.gsoy.brokagefirm.model.dto;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,28 +7,33 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
-import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
-import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import java.time.LocalDateTime;
+import java.math.BigDecimal;
+import java.time.Instant;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name = "TBL_ORDER")
 @EntityListeners(AuditingEntityListener.class)
-public class Asset {
+public class Order {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name = "customerId", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     @JdbcTypeCode(SqlTypes.INTEGER)
+    private Integer id;
     private Integer customerId;
     private String assetName;
+    private String orderSide;
     private Integer size;
-    private Integer usableSize;
+    private BigDecimal price;
+    private String status;
+    @CreatedDate
+    private Instant createDate;
+
 }

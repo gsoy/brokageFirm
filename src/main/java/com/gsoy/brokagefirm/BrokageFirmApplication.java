@@ -6,11 +6,13 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import static com.gsoy.brokagefirm.model.enums.Role.ADMIN;
 import static com.gsoy.brokagefirm.model.enums.Role.MANAGER;
 
 @SpringBootApplication
+@EnableJpaAuditing
 public class BrokageFirmApplication {
 
     public static void main(String[] args) {

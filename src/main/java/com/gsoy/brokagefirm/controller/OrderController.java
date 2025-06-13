@@ -1,6 +1,6 @@
 package com.gsoy.brokagefirm.controller;
 
-import com.gsoy.brokagefirm.model.Order;
+import com.gsoy.brokagefirm.model.dto.Order;
 import com.gsoy.brokagefirm.model.request.OrderRequest;
 import com.gsoy.brokagefirm.services.OrderService;
 import lombok.RequiredArgsConstructor;

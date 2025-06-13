@@ -1,4 +1,4 @@
-package com.gsoy.brokagefirm.model;
+package com.gsoy.brokagefirm.model.dto;
 
 import com.gsoy.brokagefirm.model.enums.TokenType;
 import jakarta.persistence.*;

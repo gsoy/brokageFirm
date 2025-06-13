@@ -1,6 +1,6 @@
 package com.gsoy.brokagefirm.controller;
 
-import com.gsoy.brokagefirm.model.Asset;
+import com.gsoy.brokagefirm.model.dto.Asset;
 import com.gsoy.brokagefirm.model.request.AssetRequest;
 import com.gsoy.brokagefirm.services.AssetService;
 import lombok.RequiredArgsConstructor;
